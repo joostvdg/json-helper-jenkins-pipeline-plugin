@@ -5,15 +5,21 @@
 <p>
     If you want to create an object from scratch, you can use the following: <br>
     <pre>
-        def user = new Expando(username: 'mrhaki')
-        def jsonString = writeObjectToJson(user)
-        echo "jsonString=$jsonString"
+        class Person {
+            def name;
+            def age;
+        }
+        node {
+            def joost = new Person()
+            joost.name = 'joost'
+            joost.age = 10
+
+            def jsonString = writeObjectToJson(joost)
+            echo "jsonString=$jsonString"
+        }
     </pre>
     It will print out the following:
     <pre>
-        jsonString={"expandoProperties":{"username":"mrhaki"}}
+        jsonString={"name":"joost","age":10}
     </pre>
-</p>
-<p>
-    For more about the Expando object, read: http://mrhaki.blogspot.nl/2009/10/groovy-goodness-expando-as-dynamic-bean.html
 </p>
