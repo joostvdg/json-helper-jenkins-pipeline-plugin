@@ -1,0 +1,19 @@
+<p>
+    Converts a JSON String to an Object. <br>
+    You can supply it an object and it will write out a correct json, or return null.
+</p>
+<p>
+    If you want to create an object from scratch, you can use the following: <br>
+    <pre>
+        def user = new Expando(username: 'mrhaki')
+        def jsonString = writeObjectToJson(user)
+        echo "jsonString=$jsonString"
+    </pre>
+    It will print out the following:
+    <pre>
+        jsonString={"expandoProperties":{"username":"mrhaki"}}
+    </pre>
+</p>
+<p>
+    For more about the Expando object, read: http://mrhaki.blogspot.nl/2009/10/groovy-goodness-expando-as-dynamic-bean.html
+</p>
