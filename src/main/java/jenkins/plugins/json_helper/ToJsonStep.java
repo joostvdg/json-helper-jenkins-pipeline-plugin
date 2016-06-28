@@ -10,6 +10,8 @@ import org.kohsuke.stapler.DataBoundConstructor;
 import javax.inject.Inject;
 
 /**
+ * For transforming Groovy objects to JSON.
+ *
  * @author Joost van der Griendt
  */
 public class ToJsonStep extends AbstractStepImpl {

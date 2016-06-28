@@ -12,6 +12,9 @@ import javax.inject.Inject;
 import java.io.StringReader;
 
 /**
+ * For transforming JSON into a generic Groovy object.
+ * This will be done by @see {@link JsonSlurper}
+ *
  * @author Joost van der Griendt
  */
 public class FromJsonStep extends AbstractStepImpl {
