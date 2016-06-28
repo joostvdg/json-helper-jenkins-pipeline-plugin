@@ -26,6 +26,7 @@ node {
                 sonar.projectKey=$pom.groupId:$pom.artifactId
                 sonar.projectName=$pom.name
                 sonar.projectVersion=$pom.version
+                sonar.genericcoverage.reportPaths=target/surefire-reports/TEST-jenkins.plugins.jsonHelper.FromJsonStepTest.xml
 
                 # Path is relative to the sonar-project.properties file. Replace "\\" by "/" on Windows.
                 # Since SonarQube 4.2, this property is optional if sonar.modules is set.
