@@ -1,4 +1,4 @@
-package jenkins.plugins.json_helper;
+package jenkins.plugins.jsonHelper;
 
 import com.google.gson.Gson;
 import hudson.Extension;
